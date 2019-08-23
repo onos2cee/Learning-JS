@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Lesson</title>
+    
+    <script src="js/scripts.js"></script>
+</head>
+<body id="body">
+    <h2 id='header'>My First JavaScript</h2>
+    <p>Javascript is a front end scripting language</p>
+
+    <button onclick="showDate()">Show Date</button>
+    <button onclick="clearDate()">Clear</button>
+    <button onclick="showContent()">Show Content</button>
+
+    <p id="demo"></p>
+
+    <img src="images/phone1.png" id="contactImg" style="width: 50px"> 
+    <span id='contactContent'>08033443355</span>
+    <br>
+    <button onclick="showEmail()">Show Email</button> 
+    <button onclick="showPhone()">Show Phone</button> <br><br>
+
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="changeBackground()">Change Background</button> <br><br>
+
+   
+    <button onclick="login()">Login</button>
+    <button onclick="register()">Register</button>
+    <hr>
+    <form id="loginForm" style="display:none">
+        Username: <input type="text"> <br>
+        Password: <input type="password"><br>
+        <input type="submit" value="Login"> <span onclick="register()">Register</span>
+    </form>
+
+    <form id="register" style="display:none">
+        Username: <input type="text"> <br>
+        Password: <input type="password"><br>
+        Firstname: <input type="text"> <br>
+        Lastname: <input type="text"> <br>
+        Sponsor: <input type="text"> <br>
+        <input type="submit" value="Register">  <span onclick="login()">Login</span>
+    </form>
+</body>
+</html>
